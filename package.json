@@ -1,0 +1,32 @@
+{
+  "name": "vsc-static-server",
+  "displayName": "Static HTTP Server",
+  "description": "Visual Studio Code extension to serve static files",
+  "version": "0.0.1",
+  "publisher": "mvasilkov",
+  "author": "Mark Vasilkov (https://github.com/mvasilkov)",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.83.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vsc-static-server.startServer",
+        "title": "Start the Static HTTP Server"
+      },
+      {
+        "command": "vsc-static-server.stopServer",
+        "title": "Stop the Static HTTP Server"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.83.0"
+  }
+}
